@@ -37,7 +37,7 @@ namespace Sparky
         [Test]
         [TestCase(11)]
         [TestCase(13)]
-        public void IsOddChecker_InputOffNumber_ReturnTrue(int a)
+        public void IsOddChecker_InputOddNumber_ReturnTrue(int a)
         {
             Calculator calc = new();
 
@@ -45,5 +45,15 @@ namespace Sparky
             Assert.That(isOdd, Is.EqualTo(true));
             Assert.IsTrue(isOdd);
         }
+
+        [Test]
+        [TestCase(10, ExpectedResult = false)]
+        [TestCase(11, ExpectedResult = true)]
+        public bool IsOddChecker_InputNumber_ReturnTrueIfOdd(int a)
+        {
+            Calculator calc = new();
+            return calc.IsOddNumber(a);
+        }
+
     }
 }
