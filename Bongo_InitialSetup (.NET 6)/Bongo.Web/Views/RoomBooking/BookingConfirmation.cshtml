@@ -1,0 +1,20 @@
+﻿@model Bongo.Models.Model.VM.StudyRoomBookingResult
+ 
+<h1 class="display-4">Your Study Room is booked</h1>
+<p class="lead">
+    for the whole day!
+</p>
+<p>
+    Hi @Model.FirstName,
+</p>
+<p>
+    A Study Room was booked for you
+    on <strong>@Model.Date.ToShortDateString()</strong>.<br />
+    Your booking number is <strong>@Model.BookingId</strong>.<br />
+    
+</p>
+
+
+<div>
+    <a class="btn-primary btn" style="margin-top: 25px"  asp-action="Book">Book another Study Room</a>
+</div>

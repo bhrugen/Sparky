@@ -1,0 +1,29 @@
+﻿@model IEnumerable<StudyRoomBooking> 
+<h1 class="display-4">Study Room Bookings</h1>
+
+<hr />
+
+<table class="table table-striped table-bordered dt-responsive nowrap">
+    <thead class="thead-light">
+        <tr>
+            <th>Date</th>
+            <th>Booking Id</th>
+            <th>Room ID</th>
+            <th>Email</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+        <tr>
+            <td>@booking.Date.ToShortDateString()</td>
+            <td>@booking.BookingId</td>
+            <td>@booking.StudyRoomId</td>
+            <td>@booking.Email</td>
+            <td>@booking.FirstName</td>
+            <td>@booking.LastName</td>
+        </tr>}
+    </tbody>
+</table>

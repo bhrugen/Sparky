@@ -1,0 +1,42 @@
+﻿@model StudyRoomBooking
+
+<h1 class="display-4">Book a Study Room</h1>
+<p class="lead"> for a full day!</p>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label"></label>
+        <input asp-for="FirstName" class="form-control">
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label"></label>
+        <input asp-for="LastName" class="form-control">
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Date" class="control-label"></label>
+        <input asp-for="Date" asp-format="{0:dd/MM/yyyy}" class="form-control">
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    @if ((string)ViewData["Error"] != null) { 
+        <p class="text-danger">
+            @ViewData["Error"].ToString()
+        </p>
+    }
+    <button type="submit" class="btn btn-primary">Book Study Room</button>
+
+</form>
+@section Scripts{
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
