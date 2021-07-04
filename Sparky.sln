@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Models", "Bongo_Initi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Web", "Bongo_InitialSetup (.NET 6)\Bongo.Web\Bongo.Web.csproj", "{58D57D1D-89A7-4379-9F87-1D0EC5C4CD3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bongo.Models.Tests", "Bongo.Models.Tests\Bongo.Models.Tests.csproj", "{A5711FFE-A975-49B1-88A4-0A98A99A75CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Models.Tests", "Bongo.Models.Tests\Bongo.Models.Tests.csproj", "{A5711FFE-A975-49B1-88A4-0A98A99A75CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bongo.DataAccess.Tests", "Bongo.DataAccess.Tests\Bongo.DataAccess.Tests.csproj", "{A6A42F7D-3F7E-45F2-9416-2E844210A700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.DataAccess.Tests", "Bongo.DataAccess.Tests\Bongo.DataAccess.Tests.csproj", "{A6A42F7D-3F7E-45F2-9416-2E844210A700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bongo.Core.Tests", "Bongo.Core.Tests\Bongo.Core.Tests.csproj", "{1F7D5C4D-AFBE-4B8C-9E17-EE6C7B00A12A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{A6A42F7D-3F7E-45F2-9416-2E844210A700}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A42F7D-3F7E-45F2-9416-2E844210A700}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6A42F7D-3F7E-45F2-9416-2E844210A700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7D5C4D-AFBE-4B8C-9E17-EE6C7B00A12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7D5C4D-AFBE-4B8C-9E17-EE6C7B00A12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7D5C4D-AFBE-4B8C-9E17-EE6C7B00A12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7D5C4D-AFBE-4B8C-9E17-EE6C7B00A12A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{58D57D1D-89A7-4379-9F87-1D0EC5C4CD3F} = {C1C13B66-9B8A-4C04-9C01-2D5346E3743F}
 		{A5711FFE-A975-49B1-88A4-0A98A99A75CD} = {C1C13B66-9B8A-4C04-9C01-2D5346E3743F}
 		{A6A42F7D-3F7E-45F2-9416-2E844210A700} = {C1C13B66-9B8A-4C04-9C01-2D5346E3743F}
+		{1F7D5C4D-AFBE-4B8C-9E17-EE6C7B00A12A} = {C1C13B66-9B8A-4C04-9C01-2D5346E3743F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E812055-2E78-4060-A9E2-A5934CD68F4C}
